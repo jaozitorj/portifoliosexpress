@@ -1,0 +1,45 @@
+:root {
+  --s-wd: 450px;
+  --s-m-wd: 300px;
+}
+
+.sidebar-cont {
+  width: var(--s-wd);
+  min-width: var(--s-m-wd);
+  height: 100vh;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background: var(--dark);
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: hidden;
+  flex-direction: column;
+}
+
+.sidebar-cont .top-head {
+  width: var(--s-wd);
+  max-width: 400px;
+  height: auto;
+  padding: 10px;
+  border-bottom: 3px solid var(--yel);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--yel);
+  font-size: 25px;
+  position: absolute;
+  background: red;
+  top: 0px;
+  left: 0px;
+  background: var(--dark);
+  z-index: 1000;
+}
+
+.sidebar-cont .top-head .logo {
+  font-size: 30px;
+  margin-right: 10px;
+  width: 50px;
+}

@@ -1,0 +1,525 @@
+.template-view {
+  width: 816px;
+  height: auto;
+  /* min-height: 100vh; */
+  background: var(--l-grey);
+  position: relative;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  transform: scale(1);
+  transition: 0.2s ease;
+}
+
+/* Left Part */
+
+.template-view .left-cont {
+  width: 600px;
+  height: auto;
+  background: var(--dark-m-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  color: var(--w);
+}
+
+.template-view .left-cont .top {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.template-view .left-cont .top img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid var(--blue);
+}
+
+.template-view .left-cont .top .info-cont {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 50%;
+  position: relative;
+  top: 0px;
+}
+
+.template-view .left-cont .top .info-cont .t {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+}
+
+.template-view .left-cont .top .info-cont .t .name {
+  /* font-size: 20px; */
+  font-weight: 900;
+}
+
+.template-view .left-cont .top .info-cont .t .job-type {
+  font-size: 12px;
+  color: var(--w-m);
+}
+
+.template-view .left-cont .top .info-cont .b {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  top: 20px;
+}
+
+.template-view .left-cont .top .info-cont .b ul li {
+  padding: 4px;
+  font-size: 12px;
+  color: var(--grey);
+}
+
+.template-view .left-cont .top .info-cont .b ul li .icon {
+  margin-right: 10px;
+}
+
+/* work exp */
+
+.template-view .left-cont .work-exp {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.template-view .left-cont .work-exp .head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100px;
+}
+
+.template-view .left-cont .work-exp .head .icon {
+  padding: 5px;
+  font-size: 30px;
+  background: var(--white);
+  border-radius: 50%;
+  color: var(--white);
+  /* margin-top: 0px; */
+}
+
+.template-view .left-cont .work-exp .cards-container {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  position: relative;
+  word-wrap: break-word;
+  margin-top: 10px;
+}
+
+.template-view .left-cont .work-exp .cards-container .l {
+  height: 100%;
+  width: 100px;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--l-grey);
+  padding-right: 10px;
+}
+
+.template-view .left-cont .work-exp .cards-container .l .icon {
+  color: var(--white);
+}
+
+.template-view .left-cont .work-exp .cards-container .r {
+  width: 100%;
+  height: auto;
+  height: auto;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.template-view .left-cont .work-exp .cards-container .r .t {
+  position: absolute;
+  top: 0px;
+}
+
+.template-view .left-cont .work-exp .cards-container .r .t h5 {
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.template-view .left-cont .work-exp .cards-container .r .t span {
+  font-size: 12px;
+  color: var(--grey);
+  text-transform: capitalize;
+}
+
+.template-view .left-cont .work-exp .cards-container .r .b {
+  font-size: 12px;
+  color: var(--l-grey);
+  text-transform: capitalize;
+  position: relative;
+  top: 10px;
+  height: auto;
+  max-height: 150px;
+  word-wrap: break-word;
+  width: 100%;
+}
+
+.template-view .left-cont .work-exp .cards-container .r .b.mounted {
+  width: 400px;
+}
+
+.template-view .left-cont .work-exp .cards-container .r .b span {
+  word-wrap: break-word;
+  width: 100%;
+}
+
+/* Education */
+
+.template-view .left-cont .education-exp {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: -20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.template-view .left-cont .education-exp .head {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 60px;
+}
+
+.template-view .left-cont .education-exp .head .icon {
+  padding: 5px;
+  font-size: 30px;
+  background: var(--white);
+  border-radius: 50%;
+  color: var(--yel);
+  /* margin-top: 15px; */
+}
+
+.template-view .left-cont .education-exp .cards-container {
+  width: 100%;
+  height: 120px;
+  max-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  position: relative;
+  top: 0px;
+  margin-top: 10px;
+}
+
+.template-view .left-cont .education-exp .cards-container .l {
+  height: 100%;
+  width: 100px;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--l-grey);
+  padding-right: 10px;
+}
+
+.template-view .left-cont .education-exp .cards-container .l .icon {
+  color: var(--white);
+}
+
+.template-view .left-cont .education-exp .cards-container .r {
+  width: 100%;
+  height: auto;
+  height: auto;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.template-view .left-cont .education-exp .cards-container .r .t {
+  position: absolute;
+  top: 0px;
+}
+
+.template-view .left-cont .education-exp .cards-container .r .t h5 {
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.template-view .left-cont .education-exp .cards-container .r .t span {
+  font-size: 12px;
+  color: var(--grey);
+  text-transform: capitalize;
+}
+
+.template-view .left-cont .education-exp .cards-container .r .b {
+  font-size: 12px;
+  color: var(--l-grey);
+  text-transform: capitalize;
+  position: relative;
+  top: 5px;
+  max-height: 100px;
+}
+
+/* Hobbies section */
+.template-view .left-cont .hobbies {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: -20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.template-view .left-cont .hobbies .head {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  height: 60px;
+  justify-content: flex-start;
+}
+
+.template-view .left-cont .hobbies .head .icon {
+  padding: 5px;
+  font-size: 30px;
+  background: var(--white);
+  border-radius: 50%;
+  color: var(--yel);
+  margin-top: 15px;
+}
+
+.template-view .left-cont .hobbies .head span {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.template-view .left-cont .hobbies .body {
+  width: 450px;
+  height: auto;
+  max-height: 200px;
+  font-size: 12px;
+  color: var(--l-grey);
+}
+
+.template-view .left-cont .hobbies .body .mounted {
+  word-wrap: break-word;
+}
+
+/* Right Part */
+
+.template-view .right-cont {
+  width: 300px;
+  max-width: 55%;
+  height: 100%;
+  background: var(--dark);
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  padding: 10px;
+}
+
+.template-view .right-cont .cont {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.template-view .right-cont .cont .box {
+  height: auto;
+}
+
+/* Quotes Section */
+
+.template-view .right-cont .quotes-cont {
+  width: 100%;
+  position: relative;
+  top: 20px;
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+  flex-direction: column;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+}
+.template-view .right-cont .quotes-cont .icon {
+  font-size: 40px;
+  padding: 5px;
+  background: rgb(255, 255, 255);
+  color: #007bff;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.template-view .right-cont .quotes-cont .body {
+  font-size: 13px;
+  color: var(--l-grey);
+}
+
+/* Pro skills */
+.template-view .right-cont .pro-skills-cont {
+  width: 100%;
+  position: relative;
+  top: 20px;
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.template-view .right-cont .pro-skills-cont h4 {
+  color: var(--l-grey);
+  margin-bottom: 50px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.template-view .right-cont .pro-skills-cont .skills-cont {
+  width: 100%;
+  margin-bottom: 25px;
+  height: 100%;
+}
+
+.template-view .right-cont .pro-skills-cont .skills-cont .skills-card {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: -10px;
+}
+
+.template-view .right-cont .pro-skills-cont .skills-cont .skills-card span {
+  color: var(--l-grey);
+  font-size: 12px;
+}
+
+/* Personal Skills */
+.template-view .right-cont .personal-skills {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* background: green; */
+}
+
+.template-view .right-cont .personal-skills .head {
+  color: var(--l-grey);
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.template-view .right-cont .personal-skills .p-skills-cont {
+  position: relative;
+  top: 20px;
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.template-view .right-cont .personal-skills .p-skills-cont span {
+  font-size: 10px;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 30px;
+  background: var(--white);
+  color: var(--yel);
+}
+
+.template-view .right-cont .socials {
+  width: 100%;
+  position: relative;
+  top: 0px;
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.template-view .right-cont .socials {
+  color: var(--l-grey);
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.template-view .right-cont .socials .list li .icon {
+  color: var(--grey);
+  margin-right: 10px;
+}
+
+.template-view .right-cont .socials .list li a {
+  font-size: 12px;
+  color: var(--white);
+}
+
+.zoom-cont {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  transform: scale(0.85);
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.zoom-cont .icon {
+  font-size: 40px;
+  padding: 5px;
+  background: var(--w);
+  box-shadow: 0px 0px 3px var(--grey);
+  overflow: hidden;
+}
+
+.zoom-cont .icon:hover {
+  background: var(--l-grey);
+}
+
+.zoom-cont:hover {
+  transform: scale(0.95);
+  transition: 0.2s ease;
+}
+
+.space {
+  width: 100%;
+  height: 20vh;
+}
